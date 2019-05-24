@@ -22,7 +22,8 @@ public class exampleTest {
     public void exampleTest() throws InterruptedException {
         driver.get("https://softesis.atlassian.net/secure/RapidBoard.jspa?rapidView=11&selectedIssue=TA-828");
 
-        for (int i = 0; i < 4; i++){
+        for (int i = 0; i < 4; i++){  //change the number of iterations
+
             String TA_NAME = "FOR:" + i;
 
             driver.findElement(By.id(ta(TA_NAME,"username"))).sendKeys("dd");
